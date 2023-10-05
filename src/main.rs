@@ -63,7 +63,7 @@ fn _factorial_of_number() {
     println!("Fatorial de {} é {}", factorial_input, factorial); 
 }
 
-fn greatest_common_divisor() {
+fn _greatest_common_divisor() {
     println!("Informe o valor do primeiro número:");
     let mut number1: String = String::new();
     io::stdin().read_line(&mut number1).expect("Erro ao ler number1");
@@ -84,10 +84,23 @@ fn greatest_common_divisor() {
     println!("O maior divisor comum entre {} e {} é {}", number1.trim(), number2.trim(), converted_number1);
 }
 
+fn _double(num: i32) -> i32 {
+    2 * num
+}
+
+fn _max(number1: i32, number2: i32) -> i32 {
+    if number1 >= number2 {
+        number1
+    }
+    else {
+        number2
+    }
+}
+
 fn main() {
     //greather_or_lower_equal();
     //_sum_digits_from_number();  
     //_factorial_of_number();
-    greatest_common_divisor();
+    //greatest_common_divisor();
 }
 
